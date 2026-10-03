@@ -1,0 +1,136 @@
+/* =========================================================
+   Service Page - 九藝室內設計工作室
+   ========================================================= */
+
+.policy-page{
+  max-width: 880px;
+  margin: 0 auto;
+  background: rgba(243, 238, 236, .86);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow-soft);
+  padding: 56px 52px;
+}
+
+.policy-page h1{
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  color: var(--dark);
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+
+.policy-page p{
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 28px;
+}
+
+.policy-page h2{
+  position: relative;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-top: 42px;
+  margin-bottom: 14px;
+  padding-left: 18px;
+  letter-spacing: .6px;
+}
+
+.policy-page h2::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .35em;
+  width: 5px;
+  height: 1.1em;
+  border-radius: 999px;
+  background: var(--taupe);
+}
+
+.policy-page ul{
+  margin: 0 0 28px 0;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.policy-page li{
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 8px;
+}
+
+.policy-page a{
+  color: var(--dark);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(64, 58, 53, .35);
+}
+
+.policy-page a:hover{
+  color: var(--gray);
+  border-bottom-color: var(--gray);
+}
+
+.policy-page > p:first-of-type{
+  font-size: 16px;
+  color: var(--dark);
+  line-height: 2.05;
+  padding-bottom: 26px;
+  margin-bottom: 34px;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-page p:last-child{
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 900px){
+  .policy-page{
+    max-width: 100%;
+    padding: 44px 36px;
+    border-radius: 24px;
+  }
+
+  .policy-page h1{
+    margin-bottom: 24px;
+  }
+
+  .policy-page h2{
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 520px){
+  .policy-page{
+    padding: 34px 24px;
+    border-radius: 22px;
+  }
+
+  .policy-page h1{
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  .policy-page h2{
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+
+  .policy-page p,
+  .policy-page li{
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .policy-page > p:first-of-type{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
